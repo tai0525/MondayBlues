@@ -1,0 +1,54 @@
+.content-register-main {
+    width: 60%;
+    margin-bottom: 3%;
+ 
+    @include tablet {  // 平板斷點，登入區塊改成平版 75% 寬度。
+        width: 75%;   
+    }         
+   
+    @include mobile {
+        width: 94%;
+    } 
+
+    .content-register-main-info {
+        display: flex;
+        justify-content: space-between;
+
+        @include tablet {  // 平版斷點，登入區塊中，並排的說明文字 & 表單，改為上下區塊顯示。
+            display: block;
+        }
+    }
+}
+
+.content-register-main-info-mark {
+    width: 45%;
+    line-height: 20px;
+
+    @include tablet {  // 平版斷點，登入區塊中，說明文字的部分，增加寬度顯示。
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    p {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}
+
+.content-register-main-info-input {  // form
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {  // 平版斷點，登入區塊中，表單的部分，增加寬度顯示。
+        width: 100%;
+    }
+
+    .password_2 {
+        margin-top: 12px;
+    }
+
+    .submit {
+        align-self: flex-end;
+    }
+}
