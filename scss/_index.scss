@@ -6,7 +6,7 @@
   h2 {
     margin-bottom: 31px;
     line-height: 32px;
-    @include horizontalLine(12.7%, 1px, #979797, 23.5%); // from _mixin.scss
+    @include horizontalLine(12.7%, 1px, #979797, 23.5%) // from _mixin.scss
       @include mobile {
         font-size: 22px;
       @include horizontalLine(12.7%, 1px, #979797, 23.5%);

@@ -278,7 +278,7 @@ span {
 .nav h1 a {
   width: 130px;
   height: 40px;
-  background: url("../logo/iconfinder-icon.svg") no-repeat;
+  background: url("../img/iconfinder-icon.svg") no-repeat;
   overflow: hidden;
   text-indent: 101%;
   white-space: nowrap;
@@ -447,7 +447,7 @@ span {
 .footer-social h2 a {
   width: 268px;
   height: 72px;
-  background: url("../logo/footer.png") no-repeat;
+  background: url("../img/footer.png") no-repeat;
   overflow: hidden;
   text-indent: 101%;
   white-space: nowrap;
