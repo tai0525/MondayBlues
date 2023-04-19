@@ -1,0 +1,19 @@
+.content-login-main{
+    width: 50%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet{
+        width: 75%;
+    }
+
+    @include mobile{
+        width: 94%;
+    }
+
+    .content-login-main-buttons{
+        display: flex;
+        justify-content: space-between;
+    }
+}

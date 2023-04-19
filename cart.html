@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="讓人懷念的好味道。MondayBlues讓您不blue。"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MondayBlues" />
+  <meta property="og:description" content="讓人懷念的好味道。MondayBlues讓您不blue。"/>
+  <meta property="og:image" content="https://images.unsplash.com/photo-1545216560-68430ad77342?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzV8fGFwcGV0aXplcnxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"/>
+  <title>MondayBlues | 首頁</title>
+  <link rel="shortcut icon" href="./logo/favion.png" type="image/x-icon"/>
+  <link rel="stylesheet" type="text/css" href="./css/all.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+  <body>
+    <div class="wrap">
+      <div class="main">
+        <div class="nav">
+          <h1><a href="./index.html" title="MondayBlues">MondayBlues</a></h1>
+          <ul class="nav-menu">
+            <li><a href="./register.html">註冊</a></li>
+            <li><a href="./cart.html">餐點</a></li>
+            <li><a href="./index.html#news">最新消息</a></li>
+            <li><a href="./index.html#chef">主廚</a></li>
+            <li><a href="./index.html#booking">線上訂位</a></li>
+          </ul>
+          <a href="#" class="mobileMenu"></a>
+        </div>
+
+        <div class="banner">
+          <div class="banner-text">
+            <h2>讓人懷念的好味道</h2>
+            <h3>MondayBlues讓您不blue</h3>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-cart">
+            <div class="content-cart-aside">
+              <div class="content-cart-aside-article">
+                <img src="./logo/menu.png" alt="menu"/>
+                <h4>線上菜單</h4>
+              </div>
+
+              <ul class="content-cart-aside-menu">
+                <li><a href="#">全部(26)</a></li>
+                <li><a href="#">開胃菜(3)</a></li>
+                <li><a href="#">湯品與沙拉(10)</a></li>
+                <li><a href="#">精選主菜(8)</a></li>
+                <li><a href="#">甜點(5)</a></li>
+              </ul>
+            </div>
+
+            <div class="content-cart-main">
+              <div class="content-cart-main-nav">
+                <div class="content-cart-main-nav-searchBar">
+                  <input type="search" name="search" class="search" />
+                  <input type="image" src="./logo/search.png" class="submit" onclick="submit()"/>
+                </div>
+
+                <div class="content-cart-main-nav-check">
+                  <a href="#" class="checkout" title="結帳去">結帳去</a>
+                  <a href="#" class="shoppingCart" title="前往購物車"></a>
+                </div>
+              </div>
+
+              <ul class="content-cart-main-foods">
+                <li class="content-cart-main-foods-item">
+                  <a href="#" class="favorite"></a>
+                  <img src="https://images.unsplash.com/photo-1625944527261-06c90f1901e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGFwcGV0aXplcnxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="獨創開胃菜組合"/>
+                  <h4>獨創開胃菜</h4>
+                  <span>Original Appetizer</span>
+                  <div class="horizontalLine"></div>
+                  <h4 class="text_price">$320</h4>
+                  <a href="#" class="content-cart-main-foods-text_cart">
+                    <img src="./logo/cart.png" alt="購物車"/>
+                    <h6>加入購物車</h6>
+                    </a>
+                </li>
+
+                <li class="content-cart-main-foods-item">
+                    <a href="#" class="favorite"></a>
+                    <img src="https://images.unsplash.com/photo-1604909052743-94e838986d24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2Flc2FyJTIwc2FsYWR8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="凱薩沙拉"/>
+                    <h4>凱薩沙拉</h4>
+                    <span>Caesar Salad</span>
+                    <div class="horizontalLine"></div>
+                    <h4 class="text_price">$400</h4>
+                    <a href="#" class="content-cart-main-foods-text_cart">
+                      <img src="./logo/cart.png" alt="購物車"/>
+                      <h6>加入購物車</h6>
+                      </a>
+                  </li>
+
+                  <li class="content-cart-main-foods-item">
+                    <a href="#" class="favorite"></a>
+                    <img src="https://images.unsplash.com/photo-1616431688941-fee43c566442?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c291cHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="每日湯品"/>
+                    <h4>每日湯品</h4>
+                    <span>Daily Soup</span>
+                    <div class="horizontalLine"></div>
+                    <h4 class="text_price">$100</h4>
+                    <a href="#" class="content-cart-main-foods-text_cart">
+                      <img src="./logo/cart.png" alt="購物車"/>
+                      <h6>加入購物車</h6>
+                      </a>
+                  </li>
+
+                  <li class="content-cart-main-foods-item">
+                    <a href="#" class="favorite"></a>
+                    <img src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="辣味海鮮義大利麵"/>
+                    <h4>辣味海鮮義大利麵</h4>
+                    <span>Spicy Seafood Spaghetti</span>
+                    <div class="horizontalLine"></div>
+                    <h4 class="text_price">$580</h4>
+                    <a href="#" class="content-cart-main-foods-text_cart">
+                      <img src="./logo/cart.png" alt="購物車"/>
+                      <h6>加入購物車</h6>
+                      </a>
+                  </li>
+                  <li class="content-cart-main-foods-item">
+                    <a href="#" class="favorite"></a>
+                    <img src="https://images.unsplash.com/photo-1624981013208-bb9adbb3f7b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aGFtYnVyZ2VyfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="牛肉起司堡"/>
+                    <h4>牛肉起司堡</h4>
+                    <span>Beef Cheese Burger</span>
+                    <div class="horizontalLine"></div>
+                    <h4 class="text_price">$380</h4>
+                    <a href="#" class="content-cart-main-foods-text_cart">
+                      <img src="./logo/cart.png" alt="購物車"/>
+                      <h6>加入購物車</h6>
+                      </a>
+                  </li>
+                  <li class="content-cart-main-foods-item">
+                    <a href="#" class="favorite"></a>
+                    <img src="https://images.unsplash.com/photo-1600326145552-327f74b9c189?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNha2V8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="莓果鬆餅"/>
+                    <h4>莓果鬆餅</h4>
+                    <span>Berries Pancakes</span>
+                    <div class="horizontalLine"></div>
+                    <h4 class="text_price">$260</h4>
+                    <a href="#" class="content-cart-main-foods-text_cart">
+                      <img src="./logo/cart.png" alt="購物車"/>
+                      <h6>加入購物車</h6>
+                      </a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="footer-related">
+            <div class="footer-related-describe">
+              <h3>About MondayBlues</h3>
+              <p>
+                Curabitur lobortis id lorem id bibndum. Ut id consectetur magna.
+                Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at.
+              </p>
+            </div>
+            <ul class="footer-related-contact">
+              <h3>Contact</h3>
+              <li>
+                <a href="https://goo.gl/maps/HTN9VBCLFXSrwQwM8" target="_blank">台中市西屯區工業區一路100號</a>
+              </li>
+              <li>
+                <a href="tel:+886886886" target="_blank">+886 886 886</a>
+              </li>
+              <li>
+                <a href="mailto:service@tcnr.com" target="_blank"
+                  >service@tcnr.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <h2>
+              <a href="./index.html" title="MondayBlues首頁">MondayBlues</a>
+            </h2>
+                <ul class="footer-social-link">
+                  <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                  <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              © 2023 MondayBlues. All rights reserved.
+           </div>
+            </div>
+            
+              <div class="offCanvas">
+                <a href="#" class="close_mobileMenu"></a>
+                
+                <ul class="offCanvas-Menu">
+                  <li><a href="./register.html">註冊</a></li>
+                  <li><a href="./cart.html">餐點</a></li>
+                  <li><a href="./index.html#news">最新消息</a></li>
+                  <li><a href="./index.html#chef">主廚</a></li>
+                  <li><a href="./index.html#booking">線上訂位</a></li>
+                </ul>
+              </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+            <script src="./js/all.js"></script>
+  </body>
+</html>

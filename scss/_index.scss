@@ -1,0 +1,254 @@
+.content-index {
+  padding: 30px 0;
+  color: #3d1101;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 31px;
+    line-height: 32px;
+    @include horizontalLine(12.7%, 1px, #979797, 23.5%); // from _mixin.scss
+      @include mobile {
+        font-size: 22px;
+      @include horizontalLine(12.7%, 1px, #979797, 23.5%);
+    }
+  }
+}
+/* Blog view */
+.blog-view{
+  margin: 3rem .5rem;
+}
+.img-box{
+  margin: .5rem auto;
+  max-width: 350px;
+}
+.img-box img{
+  padding: .5rem;
+  max-height: 80%;
+}
+
+.text-box{
+  text-align: center;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 0 .5rem;
+}
+.text-box h3{
+  text-transform: uppercase;
+  margin: 1rem;
+  font-weight: bold;
+}
+.text-box-heading{
+  margin-bottom: 1rem;
+  letter-spacing: normal;
+  line-height: 1;
+}
+.text-box p{
+  margin:0 auto 1rem auto;
+  width: 90%;
+}
+.text-box a{
+  color: black;
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.blog-view {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      place-items: center;
+      max-width: 1000px;
+      margin: 4rem auto;
+
+    @include mobile {
+      grid-template-columns: 1fr ;
+      max-width: 820px;
+      margin: 2rem auto;
+    }
+  }
+.text-box,.img-box{
+      margin: 0 auto;
+      
+      @include mobile {
+      margin: 8px ;
+      }
+  }
+  .img-box img {
+      padding: 0;
+  }
+
+  /* chef  */
+.chef-view{
+  background-color: #aa7755;
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  // max-width: 820px;
+  margin: 3rem auto;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    margin: 2rem auto;
+  }
+  .chef-text-box .chef-name {
+    font-size: 1rem;
+  }
+}
+.chef-text-box{
+  text-align: left;
+  width: 60%;
+  margin: 0 ;
+}
+.chef-text-box-heading{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.chef-text-box p{
+  padding: 0;
+  color: black;
+  font-size: 1.2rem;
+  width: 100%;
+  // max-width: 350px;
+  margin-bottom: 1rem;
+}
+.chef-img-box {
+  width: 80%;
+  margin: 0 2% 0 4%;
+  object-fit: cover; //填滿元素的寬度及高度(維持原比例)，通常會剪掉部分的物件
+
+  @include mobile {
+    width: 60%;
+    margin: 2% 0;
+  }
+}
+.chef-text-box a {
+  color: bisque;
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.chef-text-box h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.chef-text-box h2{
+  margin-bottom: 1rem;
+}
+.chef-text-box .chef-name{
+  font-size: 1.2rem;
+}
+
+.content-index-booking {
+  padding: 20px 0;
+  color: #3d1101;
+  background-color: rgb(250, 250, 250);
+
+  h3 {
+    margin-bottom: 38px;
+    line-height: 32px;
+    text-align: center;
+  }
+}
+
+.content-index-booking-info {
+  display: flex; 
+  justify-content: center;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  iframe {
+    width: 80%;
+    margin: 1%;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+
+.content-index-booking-info-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; //平均分配寬度，第一項和最後一項貼齊邊緣
+  margin:1% 1%;
+
+  @include mobile {
+    width: 94%;
+    margin: 0;
+  }
+
+  label {
+    text-align: left;
+    margin-bottom: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #username,
+  #phone,
+  #email,
+  #people {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 5px;
+    border-style: hidden;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  span {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .veganQA {
+    display: flex;
+    margin-bottom: 30px;
+
+    label {
+      margin: 0; // 覆蓋前面的label 設定
+    }
+
+    label + label {
+      margin-left: 25px;
+    }
+    input[type="radio"] {
+      width: 16px;
+    }
+  }
+
+  .submitSet {
+    text-align: right;
+
+    .cancel,
+    .submit {
+      width: 15%;
+      padding: 6px 0;
+      font-size: 14px;
+      color: #fff;
+      border-style: hidden;
+      border-radius: 3px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #3d1101;
+      }
+    }
+
+    .cancel {
+      margin-right: 11px;
+      background-color: #877f6c;
+    }
+
+    .submit {
+      background-color: rgb(233, 139, 42);
+    }
+  }
+}
