@@ -5,7 +5,6 @@
     @include tablet {  // 平板斷點，登入區塊改成平版 75% 寬度。
         width: 75%;   
     }         
-   
     @include mobile {
         width: 94%;
     } 
@@ -28,7 +27,6 @@
         width: 100%;
         margin-bottom: 30px;
     }
-
     p {
         margin-top: 10px;
         font-size: 14px;
@@ -43,11 +41,9 @@
     @include tablet {  // 平版斷點，登入區塊中，表單的部分，增加寬度顯示。
         width: 100%;
     }
-
     .password_2 {
         margin-top: 12px;
     }
-
     .submit {
         align-self: flex-end;
     }

@@ -8,7 +8,6 @@
 	white-space: nowrap; 
 }
 
-
 // a連結用的背景圖設定
 @mixin bgImg ($bgImg_width, $bgImg_height, $bgImg_url) {
 	width: $bgImg_width;
@@ -38,7 +37,6 @@
         right: $start_ratio;
     }
 }
-
 
 // 滑動式選單，使用時遵照定義，命名html結構。 引入時 放在css最外層。
 @mixin off-canvas ($text_color, $bg_color, $hover_bg_color) {
@@ -106,7 +104,6 @@
 		}
 	}
 }
-
 
 // 行動版 下拉式選單，使用時遵照定義，命名html結構。  引入時 放在css最外層。
 @mixin drop-down_menu ( $top-start, $header-bg-color ) {
